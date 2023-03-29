@@ -1,0 +1,10 @@
+<nav>
+  <a routerLink="/">Home</a>|
+  <a routerLink="/comics">Comics</a>|
+  <a routerLink="/gestion">Gestión</a>|
+  <a *ngIf="user" routerLink="/perfil">Perfil</a>|
+  <a *ngIf="!user" routerLink="/login">Login</a>|
+  <a *ngIf="!user" routerLink="/registrar">Registro</a>|
+  <a *ngIf="user" routerLink="/logout">Cerrar sesión</a>
+
+</nav>
